@@ -1,0 +1,96 @@
+https://www.youtube.com/watch?v=PbKOrSottRQ&list=PLCC34OHNcOtpalASMlX2HHdsLNipyyhbK&index=2
+
+why use numpy array instead of python list?
+Numpy arrays have many advs over python lists, like:
+    1) speed:  Numpy is 50% faster than python lists
+    2) memory: numpy uses less memory than python lisits
+    3) code effeciency:  numpy can perform complext math on the large datasets
+
+---------------------------------------------------------------------------------
+
+NumPy stands for Numeric python 
+
+----------------------------------------------------------------------------------
+
+anythings inside a numpy array need to be of same data type
+
+----------------------------------------------------------------------------------
+
+data type of numpy is ndarray, which stands for n-dimensional array
+
+----------------------------------------------------------------------------------
+
+to install numpy run following command:
+    pip install numpy
+
+----------------------------------------------------------------------------------
+
+how to import numpy:
+    import numpy as np
+
+----------------------------------------------------------------------------------
+
+how to initalize numpy array: 
+    np1 = np.array([0, 1, 2, 3, 4, 5])
+
+----------------------------------------------------------------------------------
+
+how to get number of elements in of a numpy array
+
+    print(np1.shape)
+
+----------------------------------------------------------------------------------
+
+arange function/property of numpy array if we use it and pass a range in parametes 
+it will initialize the numbers if given 3 it will initialize it like this ([0, 1, 2])
+
+    np.arange(start_value, end_value, step)
+
+if use it like this 
+    np2 = np.arange(10)
+    output: [0 1 2 3 4 5 6 7 8 9]
+
+if use it like this 
+    np3 = np.arange(0, 10, 2)
+    output: [0 2 4 6 8]
+
+----------------------------------------------------------------------------------
+
+numpy zeros function
+if it like this :
+    np4 = np.zeros(10)
+    output: [0 0 0 0 0 0 0 0 0 0]
+
+----------------------------------------------------------------------------------
+
+how to initalize Multidimensional numpy arrays using zero function
+    if its like this:
+        np1 = np.zeros((2, 10))
+        output: [[0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+                [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+how to initalize single-dimensional numpy arrays using full function
+    if its like this:
+        np1 = np.full((10), 6)
+        output: [6 6 6 6 6 6 6 6 6 6]
+
+how to initalize Multidimensional numpy arrays using zero function
+    if its like this:
+        np1 = np.full((10), 6)
+        output: [[6 6 6 6 6 6 6 6 6 6]
+                [6 6 6 6 6 6 6 6 6 6]]
+
+----------------------------------------------------------------------------------
+
+how to convert and python list to an numpy array
+    list1 = [1, 2, 3, 4, 5, 6]
+    np1 = np.array(list1)
+    output: [1, 2, 3, 4, 5, 6]
+looks like python list but actually its numpy array we can access the values 
+just as same as we do in array
+    print(np1[0])
+    output: 1
+
+----------------------------------------------------------------------------------
+
+
